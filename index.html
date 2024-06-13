@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <!-- Option 1: Include in HTML -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -15,17 +14,37 @@
     <!-- header-part -->
     <header>
       <nav class="header-navbar">
-        <a href="#" class="port">Dennis</a>
-        <ul>
+        <a href="#" class="name">Dennis</a>
+        <ul class="nav-list">
           <li><a href="#" class="nav-text">Home</a></li>
           <li><a href="#" class="nav-text">Projects</a></li>
           <li><a href="#" class="nav-text">About me</a></li>
-          <li><a href="#" class="nav-text">Content</a></li>
+          <li><a href="#" class="nav-text">Contact Us</a></li>
+          <li id="social">
+            <div class="social-part">
+              <!-- Social icons for mobile -->
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <!-- Add more social icons as needed -->
+            </div>
+          </li>
         </ul>
-        <a href="#" class="logo"><i class="bi bi-list"></i></a>
+
+        <div class="button-part">
+          <a href="#" class="logo" id="menu-icon"><i class="bi bi-list"></i></a>
+          <button class="content-btn">Contact me</button>
+        </div>
       </nav>
     </header>
     <main></main>
     <footer></footer>
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-list").classList.toggle("show");
+        });
+    </script>
   </body>
 </html>

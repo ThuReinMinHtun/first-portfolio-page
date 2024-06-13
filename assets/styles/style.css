@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap");
 :root {
   --font-inter: "Inter", sans-serif;
-  --pale-black: #222831;
-  --desaturated-black: #393e46;
-  --cyan: #00adb5;
-  --white: #eeeeee;
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
   --font-fira: "Fira Sans", sans-serif;
 }
 
@@ -19,8 +19,8 @@ body {
   height: 100vh;
   position: relative;
   font-family: var(--font-inter);
-  background-color: var(--pale-black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .header-navbar {
@@ -29,31 +29,31 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 20px;
-  background-color: transparent;
+  background-color: var(--black);
   border-bottom: 1px solid var(--white);
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease-in-out;
 }
 
-.header-navbar ul {
-  display: flex;
+.header-navbar .nav-list {
   text-align: center;
   list-style: none;
-  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.port {
+.name {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: var(--yellow);
   margin-left: 10px;
   font-style: italic;
-  text-shadow:2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.header-navbar ul li {
+.header-navbar .nav-list li {
   display: inline-block;
   margin: 10px 1.5rem;
 }
@@ -63,22 +63,100 @@ body {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  transition:all 0.3s ;
+  transition: all 0.3s;
 }
 
-.nav-text:hover{
-    color: var(--cyan);
-    transition: color 0.5s ease;
+.nav-text:hover {
+  color: var(--yellow);
+  transition: color 0.5s ease;
 }
 
-.logo{
-    font-size: 24px;
-    color: var(--white);
-    margin-right: 10px;
-    text-align: center;
-    transition:all 0.3s ;
+.social-part{
+    display: none;
 }
-.logo:hover{
-    color: var(--cyan);
-    transition: color 0.5s ease;
+
+.logo {
+  display: block;
+  font-size: 24px;
+  color: var(--yellow);
+  justify-content: flex-end;
+  text-align: center;
+  transition: all 0.3s;
+}
+.logo:hover {
+  color: var(--grey);
+  transition: color 0.5s ease;
+}
+
+.button-part {
+  display: flex;
+  align-items: center;
+}
+
+.content-btn {
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--black);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-btn:hover {
+  background-color: var(--grey);
+}
+
+
+@media (max-width: 768px) {
+  .header-navbar .nav-list {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    top: 11.5%;
+    right: 0;
+    border-bottom: 1px solid white;
+    z-index: 1;
+    background-color: var(--black);
+    width: 100%; /* Adjust width to fit screen */
+    transition: all 0.5s ease;
+  }
+
+  .header-navbar .nav-list.show {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+  #social,.social-part{
+    display: block;
+    border-bottom: none;
+  }
+
+  .social-part a{
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: all 0.3s;
+  }
+  .social-part a:hover{
+    color:var(--yellow);
+  }
+
+  .header-navbar .nav-list li {
+    margin: 1rem 1.5rem;
+    width: 90%;
+    border-bottom: 1px solid white;
+  }
+  .logo-and-button .logo {
+    display: block;
+  }
+  
 }
