@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap");
 :root {
   --font-inter: "Inter", sans-serif;
-  --yellow: hsl(47, 88%, 63%);
-  --white: hsl(0, 0%, 100%);
-  --grey: hsl(0, 0%, 50%);
-  --black: hsl(0, 0%, 7%);
+  --yellow: #fff200;
+  --white: #f5f5f5;
+  --grey: #d6e6f2;
+  --black: #000000;
   --font-fira: "Fira Sans", sans-serif;
 }
 
@@ -71,21 +71,12 @@ body {
   transition: color 0.5s ease;
 }
 
-.social-part{
-    display: none;
+.social-part {
+  display: none;
 }
 
 .logo {
-  display: block;
-  font-size: 24px;
-  color: var(--yellow);
-  justify-content: flex-end;
-  text-align: center;
-  transition: all 0.3s;
-}
-.logo:hover {
-  color: var(--grey);
-  transition: color 0.5s ease;
+  display: none;
 }
 
 .button-part {
@@ -98,8 +89,8 @@ body {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 650;
   font-style: italic;
   background-color: var(--yellow);
   border: none;
@@ -112,7 +103,6 @@ body {
 .content-btn:hover {
   background-color: var(--grey);
 }
-
 
 @media (max-width: 768px) {
   .header-navbar .nav-list {
@@ -135,28 +125,39 @@ body {
     align-items: flex-start;
     padding: 10px 10px;
   }
-  #social,.social-part{
+  #social,
+  .social-part {
     display: block;
-    border-bottom: none;
   }
 
-  .social-part a{
+  .social-part a {
     color: white;
+
     font-size: 28px;
-    margin: 0 10px;
+    padding: 0 10px;
     transition: all 0.3s;
   }
-  .social-part a:hover{
-    color:var(--yellow);
+  .social-part a:hover {
+    color: var(--yellow);
   }
 
   .header-navbar .nav-list li {
     margin: 1rem 1.5rem;
     width: 90%;
-    border-bottom: 1px solid white;
   }
-  .logo-and-button .logo {
+  .logo-and-button {
     display: block;
   }
-  
+  .logo {
+    display: block;
+    font-size: 24px;
+    color: var(--yellow);
+    justify-content: flex-end;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .logo:hover {
+    color: var(--grey);
+    transition: color 0.5s ease;
+  }
 }

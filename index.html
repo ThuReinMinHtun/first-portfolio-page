@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/body-style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -19,14 +20,13 @@
           <li><a href="#" class="nav-text">Home</a></li>
           <li><a href="#" class="nav-text">Projects</a></li>
           <li><a href="#" class="nav-text">About me</a></li>
-          <li><a href="#" class="nav-text">Contact Us</a></li>
+          <li><a href="#" class="nav-text">Contact</a></li>
           <li id="social">
             <div class="social-part">
               <!-- Social icons for mobile -->
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
-              <!-- Add more social icons as needed -->
             </div>
           </li>
         </ul>
@@ -37,7 +37,32 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <!-- detail about me and container -->
+    <main class="main-container">
+      <!-- detail about me -->
+      <section class="profile-container">
+        <video autoplay muted loop id="bg-video">
+          <source src="./assets/image/background-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="profile-detail">
+          <h1 class="profile-text">
+            Hello ,
+            <br />
+            I'm <span class="highlight">Thu Rein Min Htun</span>
+          </h1>
+          <p class="text">
+            a Front-End Developer, I'm learning in HTML, CSS, JavaScript, with a
+            focus on clean code and responsive design.
+          </p>
+
+        </div>
+        <div class="img-section">
+          <!-- <img src="./assets/image/background-pattern.png" alt=""> -->
+        </div>
+      </section>
+      <section class="skill"></section>
+    </main>
     <footer></footer>
     <script>
       document
