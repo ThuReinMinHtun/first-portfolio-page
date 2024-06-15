@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes slideInfromLeft {
+@keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@keyframes slideInfromRight {
+@keyframes slideInFromRight {
   from {
     transform: translateX(100%);
   }
