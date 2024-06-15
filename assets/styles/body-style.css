@@ -102,7 +102,7 @@ body {
 
 @media (max-width: 768px) {
   .profile-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -114,12 +114,6 @@ body {
     width: 80%;
     text-align: center;
     margin: 0;
-  }
-  .profile-detail {
-    order: 2;
-  }
-  .img-section {
-    order: 1;
   }
   .img-section img {
     max-width: 100%;
