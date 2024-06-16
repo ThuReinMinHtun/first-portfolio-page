@@ -52,9 +52,6 @@ body {
 }
 #myBtn i {
   color: var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #myBtn:hover {
   background-color: var(--grey);
@@ -198,7 +195,6 @@ body {
 /* media queries responsive */
 
 @media (max-width: 475px) {
-  
   .profile-container {
     flex-direction: column;
     height: auto;
