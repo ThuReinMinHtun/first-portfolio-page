@@ -111,6 +111,7 @@ body {
 .skill-container {
   padding: 50px 20px;
   text-align: center;
+  background-color: var(--grey);
   color: var(--black);
   font-family: var(--font-fira);
   background-image: url(/assets/image/bg-pattern.png);
