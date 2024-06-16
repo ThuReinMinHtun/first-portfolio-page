@@ -198,9 +198,7 @@ body {
 /* media queries responsive */
 
 @media (max-width: 475px) {
-  #myBtn {
-    font-size: 18px;
-  }
+  
   .profile-container {
     flex-direction: column;
     height: auto;
