@@ -111,18 +111,12 @@ body {
 .skill-container {
   padding: 50px 20px;
   text-align: center;
-
   color: var(--black);
   font-family: var(--font-fira);
-  background: rgb(166, 166, 173);
-  background: linear-gradient(
-    90deg,
-    rgba(166, 166, 173, 1) 1%,
-    rgba(174, 174, 184, 1) 6%,
-    rgba(188, 188, 194, 1) 24%,
-    rgba(241, 241, 241, 1) 83%,
-    rgba(235, 235, 240, 1) 100%
-  );
+  background-image: url("../image/bg-pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border: none;
   opacity: 0;
   transform: translateY(20px);
@@ -163,12 +157,13 @@ body {
 }
 
 .skill-photo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 .logo-text {
   font-family: var(--font-rubik);
+  font-size: 20px;
   margin-top: 5px;
 }
 /* media queries responsive */
@@ -206,5 +201,34 @@ body {
   }
   .text {
     font-size: 12px;
+  }
+  .skill-container{
+    padding: 20px;
+    animation: slideInFromBottom 0.5s ease-in-out;
+  }
+  .skill-grid{
+    flex-wrap: wrap;
+    flex-direction: row;justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  .skill-photo{
+    width: 30px;
+    height: 30px;
+  }
+  .skill-logo{
+    margin: 1.2rem;
+  }
+  .skill-title,
+  .arrow
+  {
+    font-size: 20px;
+  }
+  .logo-text{
+    font-family: var(--font-inter);
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 550;
   }
 }
