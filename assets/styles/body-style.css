@@ -111,13 +111,18 @@ body {
 .skill-container {
   padding: 50px 20px;
   text-align: center;
-  background-color: var(--grey);
+
   color: var(--black);
   font-family: var(--font-fira);
-  background-image: url("/assets/image/bg-pattern.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: rgb(166, 166, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 166, 173, 1) 1%,
+    rgba(174, 174, 184, 1) 6%,
+    rgba(188, 188, 194, 1) 24%,
+    rgba(241, 241, 241, 1) 83%,
+    rgba(235, 235, 240, 1) 100%
+  );
   border: none;
   opacity: 0;
   transform: translateY(20px);
