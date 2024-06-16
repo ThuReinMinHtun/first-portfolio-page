@@ -11,7 +11,7 @@
   --font-fira: "Fira Sans", sans-serif;
   --font-rubik: "Rubik", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -114,14 +114,19 @@ body {
   background-color: var(--grey);
   color: var(--black);
   font-family: var(--font-fira);
-  background-image: url(/assets/image/bg-pattern.png);
+  background-image: url("/assets/image/bg-pattern.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: none;
-  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* skill grid*/
 
 .skill-title,
@@ -157,7 +162,7 @@ body {
   height: 100px;
   object-fit: cover;
 }
-.logo-text{
+.logo-text {
   font-family: var(--font-rubik);
   margin-top: 5px;
 }
