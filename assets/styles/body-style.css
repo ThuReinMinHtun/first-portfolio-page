@@ -32,7 +32,34 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
-
+#myBtn {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 2%;
+  right: 2%;
+  z-index: 5;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  color: var(--black);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  animation: slideInFromBottom 0.5s ease-in-out;
+}
+#myBtn i {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myBtn:hover {
+  background-color: var(--grey);
+  animation: heartbeat 1s infinite;
+}
 .profile-container {
   width: 100%;
   height: 100vh;
@@ -131,15 +158,16 @@ body {
 .skill-title,
 .arrow {
   font-size: 30px;
+  margin-top: 10px;
   animation: fadeIn 1.5s ease-in-out;
 }
 .arrow {
-  margin-top: 10px;
   font-weight: bold;
   display: inline-block;
   animation: heartbeat 1s infinite;
 }
-.skill-grid {
+.skill-grid,
+.other-skill {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -148,6 +176,7 @@ body {
   gap: 20px;
   animation: fadeIn 1s ease-in-out;
 }
+
 .skill-logo {
   display: flex;
   flex-direction: column;
@@ -169,27 +198,26 @@ body {
 /* media queries responsive */
 
 @media (max-width: 475px) {
+  #myBtn {
+    font-size: 18px;
+  }
   .profile-container {
     flex-direction: column;
     height: auto;
     justify-content: center;
     align-items: center;
   }
-
   .profile-detail,
   .img-section {
     width: 100%;
     text-align: center;
   }
-
   .profile-detail {
     order: 2;
   }
-
   .img-section {
     order: 1;
   }
-
   .img-section img {
     max-width: 100%;
     height: auto;
@@ -202,30 +230,31 @@ body {
   .text {
     font-size: 12px;
   }
-  .skill-container{
+  .skill-container {
     padding: 20px;
     animation: slideInFromBottom 0.5s ease-in-out;
   }
-  .skill-grid{
+  .skill-grid,
+  .other-skill {
     flex-wrap: wrap;
-    flex-direction: row;justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     animation: fadeIn 1s ease-in-out;
   }
-  .skill-photo{
+  .skill-photo {
     width: 30px;
     height: 30px;
   }
-  .skill-logo{
+  .skill-logo {
     margin: 1.2rem;
   }
   .skill-title,
-  .arrow
-  {
+  .arrow {
     font-size: 20px;
   }
-  .logo-text{
+  .logo-text {
     font-family: var(--font-inter);
     font-size: 15px;
     margin: 10px 0;

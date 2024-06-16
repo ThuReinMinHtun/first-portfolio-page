@@ -45,8 +45,11 @@
     </header>
     <!-- detail about me and container -->
     <main class="main-container">
+      <!-- top scroll button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="bi bi-hand-index"></i>
+      </button>
       <!-- detail about me -->
-
       <section class="profile-container">
         <!-- background video -->
         <video autoplay muted loop id="bg-video">
@@ -106,9 +109,30 @@
             <h3 class="logo-text">Sql</h3>
           </div>
         </div>
+        <h2 class="skill-title">
+          Here is my some skills that I learn for a bit
+        </h2>
+        <div class="other-skill">
+          <div class="skill-logo">
+            <img
+              class="skill-photo"
+              src="./assets/icons/git.png"
+              alt="html-logo"
+            />
+            <h3 class="logo-text">git</h3>
+          </div>
+          <div class="skill-logo">
+            <img
+              class="skill-photo"
+              src="./assets/icons/github.png"
+              alt="html-logo"
+            />
+            <h3 class="logo-text">github</h3>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
-    <script src="./assets/js/click-hover.js"></script>
+    <script src="./assets/js/click-hover.js" defer></script>
   </body>
 </html>
