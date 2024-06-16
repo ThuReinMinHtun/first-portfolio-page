@@ -11,7 +11,6 @@
   --font-fira: "Fira Sans", sans-serif;
   --font-rubik: "Rubik", sans-serif;
 }
-
 html{
   scroll-behavior: smooth;
 }
@@ -47,7 +46,6 @@ body {
   overflow: hidden;
   animation: fadeIn 1s ease-in-out; /* Add animation to the container */
 }
-
 #bg-video {
   position: absolute;
   top: 0;
@@ -58,7 +56,6 @@ body {
   z-index: -1;
   animation: fadeIn 1s ease-in-out; /* Add animation to the background video */
 }
-
 .profile-detail {
   width: 50%;
   font-family: var(--font-rubik);
@@ -68,22 +65,18 @@ body {
   z-index: 1;
   animation: slideInFromLeft 1s ease-in-out; /* Add slide-in animation */
 }
-
 .profile-text {
   font-size: 28px;
   font-weight: 700;
 }
-
 .highlight {
   color: var(--white);
   transition: all 0.5s;
 }
-
 .highlight:hover {
   color: var(--yellow);
   cursor: pointer;
 }
-
 .text {
   margin: 1.5rem 0;
   font-size: 18px;
@@ -92,17 +85,14 @@ body {
   font-weight: 400;
   color: var(--white);
 }
-
 .text a {
   font-size: 20px;
   color: var(--white);
   transition: all 0.3s ease-in;
 }
-
 .text a:hover {
   color: var(--yellow);
 }
-
 .img-section {
   width: 50%;
   display: flex;
@@ -111,7 +101,6 @@ body {
   z-index: 1;
   animation: slideInFromRight 1s ease-in-out; /* Add slide-in animation */
 }
-
 .img-section img {
   width: 50%;
   height: auto;
@@ -119,20 +108,19 @@ body {
   border: 5px solid var(--white);
   object-fit: cover;
 }
-
 .skill-container {
   padding: 50px 20px;
   text-align: center;
   color: var(--black);
   font-family: var(--font-fira);
-  background-image: url("/assets/image/bg-pattern.png");
+  background-image: url(/assets/image/bg-pattern.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: none;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 1s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .show{
