@@ -1,4 +1,5 @@
 @import url(./style.css);
+@import url(./animation-body.css);
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
@@ -11,18 +12,26 @@
   --font-rubik: "Rubik", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
   background-color: var(--black);
   scroll-behavior: smooth; /* Enable smooth scrolling */
+  color: var(--white);
 }
 
 .main-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
 }
 
 .profile-container {
@@ -76,7 +85,7 @@ body {
 }
 
 .text {
-  margin: 20px 0;
+  margin: 1.5rem 0;
   font-size: 18px;
   text-transform: capitalize;
   font-family: var(--font-rubik);
@@ -105,13 +114,72 @@ body {
 
 .img-section img {
   width: 50%;
-  height: 50%;
+  height: auto;
   border-radius: 50%;
   border: 5px solid var(--white);
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+.skill-container {
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--black);
+  font-family: var(--font-fira);
+  background-image: url("/assets/image/bg-pattern.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 1s ease;
+}
+
+.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-title,
+.arrow {
+  font-size: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.arrow {
+  margin-top: 10px;
+  font-weight: bold;
+  display: inline-block;
+  animation: heartbeat 1s infinite;
+}
+.skill-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+.skill-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.skill-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.logo-text{
+  font-family: var(--font-rubik);
+  margin-top: 5px;
+}
+/* media queries responsive */
+
+@media (max-width: 475px) {
   .profile-container {
     flex-direction: column;
     height: auto;
@@ -138,5 +206,11 @@ body {
     height: auto;
     border-radius: 20%;
     margin: 20px;
+  }
+  .profile-text {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 12px;
   }
 }
