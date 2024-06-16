@@ -119,15 +119,10 @@ body {
   background-position: center;
   background-size: cover;
   border: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.show{
-  opacity: 1;
-  transform: translateY(0);
-}
+/* skill grid*/
 
 .skill-title,
 .arrow {
