@@ -4,6 +4,7 @@ document.getElementById("menu-icon").addEventListener("click", function () {
 });
 // for animation appearance
 const skillSection = document.querySelector("#skills");
+const projectSection = document.querySelector("#projects");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -18,6 +19,7 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(skillSection);
+observer.observe(projectSection);
 
 // top scroll button
 let mybutton = document.getElementById("myBtn");
