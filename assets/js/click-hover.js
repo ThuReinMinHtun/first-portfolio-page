@@ -1,7 +1,20 @@
 // click hover for nav bar
-document.getElementById("menu-icon").addEventListener("click", function () {
-  document.querySelector(".nav-list").classList.toggle("show");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
+const navMenu = document.querySelector(".nav_menu");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.style.display = "block";
+    closeBtn.style.display = "inline-block";
+    menuBtn.style.display = "none";
 });
+
+closeBtn.addEventListener("click", () => {
+    navMenu.style.display = "none";
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "inline-block";
+})
+
 // for animation appearance
 const skillSection = document.querySelector("#skills");
 const projectSection = document.querySelector("#projects");

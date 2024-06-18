@@ -6,6 +6,15 @@
     opacity: 1;
   }
 }
+@keyframes flipnavItem {
+  from {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
 
 @keyframes slideInFromLeft {
   from {
@@ -36,10 +45,11 @@
   }
 }
 @keyframes heartbeat {
-  0%,100%{
+  0%,
+  100% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.2);
   }
 }
