@@ -63,7 +63,7 @@ h5 {
   display: inline-block;
   width: fit-content;
   padding: 0.8rem 1.4rem;
-  border: 1px solid white;
+  border: 1px solid transparent;
   cursor: pointer;
   /* border-radius: 1.2rem; */
   transition: var(--transition);
@@ -159,7 +159,7 @@ nav button {
     gap: 0;
     z-index: 99;
     display: none;
-    perspective: 400px;
+    perspective: 500px;
   }
   .nav_menu li {
     width: 100%;
@@ -168,20 +168,22 @@ nav button {
     transform-origin: top;
   }
   .nav_menu li:nth-child(2) {
-    animation-delay: 200ms;
+    animation-delay: 100ms;
   }
   .nav_menu li:nth-child(3) {
-    animation-delay: 400ms;
+    animation-delay: 250ms;
   }
   .nav_menu li:nth-child(4) {
-    animation-delay: 600ms;
+    animation-delay: 350ms;
   }
   .nav_menu li:nth-child(5) {
-    animation-delay: 800ms;
+    animation-delay: 450ms;
+  }
+  .nav_menu li:nth-child(6) {
+    animation-delay: 550ms;
   }
   .nav_menu li a {
     background-color:var(--grey);
-    box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
     color: var(--black);
     width: 100%;
     height: 100%;
