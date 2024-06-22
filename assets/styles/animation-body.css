@@ -53,3 +53,11 @@
     transform: scale(1.2);
   }
 }
+@keyframes scrollImage {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
