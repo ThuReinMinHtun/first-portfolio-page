@@ -337,7 +337,7 @@ html {
   border: 2px solid var(--yellow);
 }
 .line2 {
-  width: 90%;
+  width: 100%;
   height: 2px;
   background-color: white;
   display: flex;
@@ -430,10 +430,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: 20px 10px;
+  width: 100%;
+  margin: 20px 0;
   gap: 20px;
   position: relative;
+  border-bottom:2px solid var(--white);
 }
 .about-me::before{
   content: '';
@@ -479,7 +480,7 @@ html {
 }
 .left-section{
   width: 50%;
-  
+  margin: 10px 15px;
 }
 /* social media icons */
 .social-icons{
@@ -499,7 +500,7 @@ html {
   transition: color 0.3s ease-in-out;
 }
 .right-section{
-  width: 50%;
+  width: 45%;
   align-self: start;
   justify-self: flex-end;
   display:none ;
