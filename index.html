@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/body-style.css" />
     <link rel="stylesheet" href="./assets/styles/animation-body.css" />
-    <link rel="stylesheet" href="./assets/styles/biography.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -255,14 +254,78 @@
             learning new technologies and improving my skills every day.
           </p>
           <ul class="about-links">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li onclick="showContent('learning')">
+              When did I start learning programming?
+            </li>
+            <li onclick="showContent('how')">How did I learn programming?</li>
+            <li onclick="showContent('languages')">
+              Programming Languages I know and am learning
+            </li>
+            <li onclick="showContent('passions')">My passions</li>
+            <li onclick="showContent('personality')">My personality</li>
           </ul>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
-        <div class="section-contents"></div>
+        <div class="right-section" id="learning">
+          <h2>When did I start learning programming?</h2>
+          <p>
+            I started learning programming Since 2023, and it quickly became my
+            favorite subject. Since then, I've been dedicated to improving my
+            skills and knowledge in the field.
+          </p>
+        </div>
+        <div class="right-section" id="how">
+          <h2>How did I learn programming?</h2>
+          <p>
+            I learned programming through a combination of online courses,
+            tutorials, and hands-on practice. I enjoy solving problems and
+            building projects to apply what I've learned.
+          </p>
+        </div>
+        <div class="right-section" id="languages">
+          <h2>Languages I know and am learning</h2>
+          <p>
+            I am proficient in HTML, CSS, and JavaScript. I am currently
+            learning React and exploring backend technologies like Node.js and
+            Express.
+          </p>
+          <div class="icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+          </div>
+        </div>
+        <div class="right-section" id="passions">
+          <h2>My passions</h2>
+          <p>
+            Besides programming, I have a passion for music, art, and gaming. I
+            enjoy creating digital art and playing the guitar in my free time.
+          </p>
+        </div>
+        <div class="right-section" id="personality">
+          <h2>My personality</h2>
+          <p>
+            I am a curious and creative individual who loves to explore new
+            ideas and concepts. I would love to collaborating with others on
+            projects.
+          </p>
+        </div>
       </section>
     </main>
     <footer></footer>

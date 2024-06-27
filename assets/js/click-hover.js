@@ -4,16 +4,16 @@ const closeBtn = document.querySelector("#close-menu-btn");
 const navMenu = document.querySelector(".nav_menu");
 
 menuBtn.addEventListener("click", () => {
-    navMenu.style.display = "block";
-    closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none";
+  navMenu.style.display = "block";
+  closeBtn.style.display = "inline-block";
+  menuBtn.style.display = "none";
 });
 
 closeBtn.addEventListener("click", () => {
-    navMenu.style.display = "none";
-    closeBtn.style.display = "none";
-    menuBtn.style.display = "inline-block";
-})
+  navMenu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "inline-block";
+});
 
 // for animation appearance
 const skillSection = document.querySelector("#skills");
@@ -68,3 +68,12 @@ document.querySelectorAll("nav a"),
       });
     });
   });
+// about me part
+function showContent(sectionId) {
+  // hide all sections
+  document.querySelectorAll(".right-section").forEach((section) => {
+    section.style.display = "none";
+  });
+
+  document.getElementById(sectionId).style.display = "block";
+}
