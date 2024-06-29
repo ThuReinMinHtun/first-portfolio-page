@@ -77,3 +77,10 @@ function showContent(sectionId) {
 
   document.getElementById(sectionId).style.display = "block";
 }
+
+showContent("aboutme");
+function toggleAnswer(id) {
+  const answer = document.getElementById(id);
+  answer.style.display=answer.style.display==='block'?'none':'block';
+}
+// contact me part

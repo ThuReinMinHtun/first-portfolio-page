@@ -263,6 +263,7 @@
             </li>
             <li onclick="showContent('passions')">My passions</li>
             <li onclick="showContent('personality')">My personality</li>
+            <li onclick="showContent('other-skills')">My other-skills</li>
           </ul>
           <div class="social-icons">
             <a href="#">
@@ -326,7 +327,33 @@
             projects.
           </p>
         </div>
+        <div class="right-section" id="other-skills">
+          <h2>My other-skills</h2>
+          <p>Details about my Some skills are......</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>English(C1)</li>
+            <li>Japanese(N3)</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+        <!-- mobile version -->
+        <div class="qna-section">
+          <h2>About me</h2>
+          <ul class="about-links">
+            <li onclick="toggleAnswer('learning-answer')">
+              When Did I Start Learning?
+            </li>
+            <div class="answer" id="learning-answer">
+              <p>I began learning programming in 2023, and it quickly became my favorite subject. Since then, I've been dedicated to improving my skills and knowledge.</p>
+            </div>
+          </ul>
+        </div>
       </section>
+      <div class="line2"></div>
     </main>
     <footer></footer>
     <script src="./assets/js/click-hover.js" defer></script>
