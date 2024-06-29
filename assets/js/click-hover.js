@@ -70,17 +70,37 @@ document.querySelectorAll("nav a"),
   });
 // about me part
 function showContent(sectionId) {
-  // hide all sections
-  document.querySelectorAll(".right-section").forEach((section) => {
-    section.style.display = "none";
-  });
+  const screenWidth = window.innerWidth;
 
-  document.getElementById(sectionId).style.display = "block";
+  // Hide all sections for desktop/tablet
+  if (screenWidth > 600) {
+    document.querySelectorAll(".right-section").forEach((section) => {
+      section.style.display = "none";
+    });
+    document.getElementById(sectionId).style.display = "block";
+  } else {
+    // Handle mobile view
+    toggleAnswer(sectionId + "-answer");
+  }
 }
 
-showContent("aboutme");
 function toggleAnswer(id) {
   const answer = document.getElementById(id);
-  answer.style.display=answer.style.display==='block'?'none':'block';
+  answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 }
-// contact me part
+
+// Event listener to handle resizing and hiding right section on mobile
+function checkScreenSize() {
+  if (window.innerWidth <= 600) {
+    document.querySelectorAll(".right-section").forEach(section => {
+      section.style.display = "none";
+    });
+  }
+}
+
+// Add event listener to check screen size on resize
+window.addEventListener("resize", checkScreenSize);
+
+// Initial check on page load
+checkScreenSize();
+
