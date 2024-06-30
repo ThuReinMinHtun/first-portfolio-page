@@ -423,10 +423,11 @@ html {
   transition: all 0.5s ease;
 }
 /* end of project-container */
-
+/* ---------------------------------------------
+ */
 /* start of about section */
 
-.about-me{
+.about-me {
   font-family: var(--font-popping);
   display: flex;
   justify-content: space-between;
@@ -436,22 +437,22 @@ html {
   gap: 20px;
   position: relative;
 }
-.about-me::before{
-  content: '';
+.about-me::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
-  width: 1px ;
+  width: 1px;
   background-color: var(--white);
   height: 100%;
   transform: translateX(-50%);
 }
-.left-section h2{
+.left-section h2 {
   font-size: 30px;
   color: var(--white);
   animation: slideInFromLeft 1s ease-in;
 }
-.left-section p{
+.left-section p {
   font-size: 15px;
   color: var(--white);
   font-family: var(--font-popping);
@@ -460,85 +461,85 @@ html {
   animation: slideInFromLeft 1s ease-in;
 }
 
-.about-links{
+.about-links {
   padding: 0;
   font-family: var(--font-inter);
   list-style: none;
 }
-.about-links li{
+.about-links li {
   margin: 20px 0;
   cursor: pointer;
   color: var(--white);
-  text-decoration:  underline;
+  text-decoration: underline;
   font-size: 1.1rem;
-  transition:color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   animation: slideInFromLeft 2s ease-in-out;
 }
-.about-links li:hover{
+.about-links li:hover {
   color: var(--yellow);
-  transition:color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.left-section{
+.left-section {
   width: 45%;
   margin: 10px 15px;
 }
 /* social media icons */
-.social-icons{
+.social-icons {
   display: flex;
   gap: 20px;
   margin-top: 10px;
   animation: fadeIn 1.5s ease-in-out;
 }
-.social-icons i{
+.social-icons i {
   color: var(--white);
   font-size: 23px;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-.social-icons i:hover{
+.social-icons i:hover {
   color: var(--yellow);
   transition: color 0.3s ease-in-out;
 }
-.right-section{
+.right-section {
   width: 40%;
-  display:none ;
+  display: none;
   align-self: center;
   justify-content: center;
   margin: 20px 10px;
   animation: fadeIn 1.5s ease-in-out;
 }
-.right-section h2{
+.right-section h2 {
   font-size: 20px;
   line-height: normal;
   color: var(--white);
 }
-.right-section p{
+.right-section p {
   font-size: 15px;
   color: var(--white);
   line-height: 1.5;
   margin-top: 10px;
 }
-.right-section ul{
+.right-section ul {
   list-style-type: disc;
   color: var(--white);
 }
-.icons{
+.icons {
   display: flex;
   gap: 20px;
   margin-top: 10px;
 }
-.icons i{
+.icons i {
   color: var(--white);
   font-size: 20px;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-.icons i:hover{
+.icons i:hover {
   color: var(--yellow);
   transition: color 0.3s ease-in-out;
 }
 /* mobile version */
-.qna-section{
+.qna-section {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -548,14 +549,64 @@ html {
   color: var(--white);
   display: none;
 }
-.answer{
+.answer {
   display: none;
   padding: 10px 0;
   border-top: 1px solid #ddd;
   animation: fadeIn 1.5s ease-in-out;
 }
- 
+
 /* end of about section */
+
+/* contact section */
+
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+}
+.form-title {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--font-popping);
+}
+form {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-popping);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: var(--font-popping);
+  text-align: left;
+}
+/* ------- end of contact section --------- */
+
 /* -------end of about section --------- */
 
 /* media queries responsive */
@@ -569,13 +620,11 @@ html {
   .text {
     font-size: 18px;
   }
-  .about-me{
+  .about-me {
     width: 100%;
     margin: 10px 0;
-    
   }
 }
-
 
 @media (max-width: 600px) {
   .profile-container {
@@ -656,20 +705,20 @@ html {
   .qna-section {
     display: block;
   }
-  .qna-section h2{
+  .qna-section h2 {
     font-size: 20px;
     font-weight: 500;
     text-align: center;
     line-height: normal;
   }
-  .qna-section p{
+  .qna-section p {
     font-size: 15px;
     font-weight: 400;
     text-align: center;
     color: var(--white);
     line-height: 1.5;
   }
-  .qna-section .about-links{
+  .qna-section .about-links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -677,13 +726,13 @@ html {
     padding: 0;
     gap: 10px;
   }
-  .qna-section .about-links li{
+  .qna-section .about-links li {
     text-decoration: none;
     margin: 10px 0;
     cursor: pointer;
   }
 
-  .social-icons{
+  .social-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -694,8 +743,7 @@ html {
     animation: slideInFromRight 1.5s ease-in-out;
   }
 
-  .social-icons i{
+  .social-icons i {
     font-size: 30px;
   }
-  
 }
