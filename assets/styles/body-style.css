@@ -682,5 +682,20 @@ html {
     margin: 10px 0;
     cursor: pointer;
   }
+
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    animation: slideInFromRight 1.5s ease-in-out;
+  }
+
+  .social-icons i{
+    font-size: 30px;
+  }
   
 }
