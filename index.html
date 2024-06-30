@@ -431,30 +431,49 @@
       </section>
       <div class="line2"></div>
       <section class="contact" id="contactme">
-        <!-- <h3 class="form-title">If you want to work together or get in touch with me, please fill out the form.</h3> -->
+        
         <fieldset class="form-container">
           <form action="mailto:thureinminhtun347@gmail.com" method="POST">
-            <div class="form-group">
-              <label for="firstname">First Name:</label>
+            <div class="form-row">
+              <div class="input-group">
+                <input
+                  required
+                  type="text"
+                  name="first-name"
+                  autocomplete="off"
+                  class="input"
+                  id="first-name"
+                />
+                <label for="first-name" class="user-label">First Name</label>
+              </div>
+              <div class="input-group">
+                <input
+                  required
+                  type="text"
+                  name="last-name"
+                  autocomplete="off"
+                  class="input"
+                  id="last-name"
+                />
+                <label for="last-name" class="user-label">Last Name</label>
+              </div>
+            </div>
+            <div class="input-group">
               <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="eg. Steven"
                 required
+                type="email"
+                name="email"
+                autocomplete="off"
+                class="input"
+                id="email"
               />
+              <label for="email" class="user-label">Email</label>
             </div>
             <div class="form-group">
-              <label for="lastname">Last Name:</label>
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="eg. Smith"
-                required
-              />
-            
+              <textarea class="input-message" id="message" name="message" cols="10" rows="5" placeholder="Message to me" required></textarea>
             </div>
+            <button class="contact-btn" type="submit">Get In Touch</button>
+            <p class="form-title">If you want to work together or get in touch with me, please fill out the form.</p>
           </form>
         </fieldset>
       </section>
